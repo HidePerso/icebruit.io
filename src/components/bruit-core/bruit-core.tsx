@@ -719,45 +719,6 @@ export class BruitCore {
   theming() {
     return (
       <style>
-        {'bruit-core .bruit-group .bruit-bar:before, bruit-core .bruit-group .bruit-bar:after{' +
-          'background-color: ' +
-          this._bruitIoConfig.colors.focus +
-          '}' +
-          'bruit-core .bruit-group input:not([type="checkbox"]):invalid ~.bruit-bar:before, bruit-core .bruit-group input:not([type="checkbox"]):invalid ~.bruit-bar:after{' +
-          'background-color: ' +
-          this._bruitIoConfig.colors.errors +
-          '}' +
-          'bruit-core button#bruit-io-submit-button:hover{' +
-          'background-color: ' +
-          this._bruitIoConfig.colors.header +
-          '!important ;' +
-          'color: white !important;' +
-          '}' +
-          'bruit-core button#bruit-io-submit-button.bruit-on-click{' +
-          'border-color: #bbbbbb!important;' +
-          'border-left-color: ' +
-          this._bruitIoConfig.colors.header +
-          '!important;}' +
-          'bruit-core .bruit-group input[type="checkbox"]:checked+label, bruit-core .bruit-group input[type="checkbox"]+label:after{' +
-          'border-color: ' +
-          this._bruitIoConfig.colors.focus +
-          '}' +
-          'bruit-core .bruit-group input:not([type="checkbox"]).bruit-has-value:invalid~label, bruit-core .bruit-group input:not([type="checkbox"]):focus:invalid~label{' +
-          'color: ' +
-          this._bruitIoConfig.colors.errors +
-          '}' +
-          'bruit-core .bruit-group input:not([type="checkbox"]).bruit-has-value~label, bruit-core .bruit-group input:not([type="checkbox"]):focus~label{' +
-          'color: ' +
-          this._bruitIoConfig.colors.focus +
-          '}' +
-          'bruit-core .bruit-group textarea.bruit-has-value~label, bruit-core .bruit-group textarea:focus~label{' +
-          'color: ' +
-          this._bruitIoConfig.colors.focus +
-          '}' +
-          'bruit-core .bruit-group textarea.bruit-has-value:invalid~label{' +
-          'color: ' +
-          this._bruitIoConfig.colors.errors +
-          '}'}
       </style>
     );
   }
