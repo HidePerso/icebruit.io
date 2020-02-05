@@ -12,7 +12,6 @@ const openAnimationDuration = 200;
 
 @Component({
   tag: 'bruit-core',
-  styleUrl: 'bruit-core.scss',
   shadow: true
 })
 export class BruitCore {
