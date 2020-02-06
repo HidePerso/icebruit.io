@@ -13,7 +13,7 @@ const openAnimationDuration = 200;
 @Component({
   tag: 'bruit-core',
   styleUrl: 'bruit-core.scss',
-  shadow: false
+  shadow: true
 })
 export class BruitCore {
   // attributs on bruit-io component
