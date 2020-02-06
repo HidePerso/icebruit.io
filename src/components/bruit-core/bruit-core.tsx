@@ -450,6 +450,7 @@ export class BruitCore {
     return (
       <div
         id="bruit-io-wrapper"
+        part="bruit-io-wrapper"
         class={this.modalOpened ? 'bruit-open' : 'bruit-close'}
         style={{
           'background-color': this._bruitIoConfig
@@ -460,6 +461,7 @@ export class BruitCore {
       >
         <div
           class="bruit-modal"
+          part="bruit-modal"
           onClick={event => {
             event.stopPropagation();
           }}
@@ -475,9 +477,10 @@ export class BruitCore {
     return (
       <div
         class="bruit-head"
+        part="bruit-head"
         style={{ 'background-color': this._bruitIoConfig.colors.header }}
       >
-        <h1 class="bruit-title">{this._bruitIoConfig.labels.title}</h1>
+        <h1 class="bruit-title" part="bruit-title">{this._bruitIoConfig.labels.title}</h1>
         <a id="bruit-io-btn-close">
           <svg
             width="24"
@@ -509,13 +512,14 @@ export class BruitCore {
     return (
       <div
         class="bruit-content"
+        part="bruit-content"
         style={{ 'background-color': this._bruitIoConfig.colors.body }}
       >
         {this.modalSubHeader()}
-        <form id="bruit-io-form">
+        <form id="bruit-io-form" part="bruit-io-form">
           <fieldset id="bruit-io-fieldset">
             {this.modalFields()}
-            <div class="bruit-button-container">
+            <div class="bruit-button-container" part="bruit-button-container">
               {this.modalSubmitButtonOrError()}
             </div>
           </fieldset>
@@ -530,6 +534,7 @@ export class BruitCore {
         <button
           type="submit"
           id="bruit-io-submit-button"
+          part="bruit-io-submit-button"
           style={{
             color: this._bruitIoConfig.colors.header,
             'border-color': this._bruitIoConfig.colors.header
@@ -542,14 +547,14 @@ export class BruitCore {
               d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
             />
           </svg>
-          <span id="button-submit-label">
+          <span id="button-submit-label" part="button-submit-label">
             {this._bruitIoConfig.labels.button}
           </span>
         </button>
       );
     } else {
       return (
-        <div id="bruit-io-footer-error" class="bruit-error">
+        <div id="bruit-io-footer-error" part="bruit-io-footer-error" class="bruit-error">
           <svg class="bruit-svg-icon" viewBox="0 0 20 20">
             <path d="M18.344,16.174l-7.98-12.856c-0.172-0.288-0.586-0.288-0.758,0L1.627,16.217c0.339-0.543-0.603,0.668,0.384,0.682h15.991C18.893,16.891,18.167,15.961,18.344,16.174 M2.789,16.008l7.196-11.6l7.224,11.6H2.789z M10.455,7.552v3.561c0,0.244-0.199,0.445-0.443,0.445s-0.443-0.201-0.443-0.445V7.552c0-0.245,0.199-0.445,0.443-0.445S10.455,7.307,10.455,7.552M10.012,12.439c-0.733,0-1.33,0.6-1.33,1.336s0.597,1.336,1.33,1.336c0.734,0,1.33-0.6,1.33-1.336S10.746,12.439,10.012,12.439M10.012,14.221c-0.244,0-0.443-0.199-0.443-0.445c0-0.244,0.199-0.445,0.443-0.445s0.443,0.201,0.443,0.445C10.455,14.021,10.256,14.221,10.012,14.221" />
           </svg>
@@ -629,6 +634,7 @@ export class BruitCore {
     return (
       <div class="bruit-group">
         <textarea
+          part="bruit-group-textarea"
           id={field.id}
           name={field.id}
           onInput={e => {
@@ -656,6 +662,7 @@ export class BruitCore {
       <div class="bruit-group">
         <input
           id={field.id}
+          part="bruit-group-checkbox"
           name={field.id}
           onChange={e => (field.value = e.target['checked'])}
           checked={field.value}
