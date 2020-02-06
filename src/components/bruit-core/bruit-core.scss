@@ -1,7 +1,7 @@
 @import './../../styles/devices';
 
-#root {
-  --font-family-brut: 'Montserrat', 'Roboto', Arial, Helvetica, sans-serif !important;
+:root {
+  --font-family-brut: 'Montserrat', 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 :host {
@@ -108,16 +108,22 @@
         flex-shrink: 0;
 
         h1.bruit-title {
-          font-weight: bold !important;
-          font-size: 24px !important;
+          font-weight: bold;
+          font-size: 24px;
           color: #fff;
         }
 
-
-        #bruit-io-btn-close {
-          width: 24px;
+        #bruit-io-btn-close::before {
+          font-size: 2.5rem;
+          content: "×";
+          line-height: 1.3rem;
+          color: #fff;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          text-shadow: none;
           cursor: pointer;
         }
+
       }
 
 
