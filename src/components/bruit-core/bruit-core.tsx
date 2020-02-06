@@ -499,22 +499,20 @@ export class BruitCore {
   }
   modalContent() {
     return (
-      <div part="bruit-content-outbox">
-        <div
-          class="bruit-content"
-          part="bruit-content"
-          style={{ 'background-color': this._bruitIoConfig.colors.body }}
-        >
-          {this.modalSubHeader()}
-          <form id="bruit-io-form" part="bruit-io-form">
-            <fieldset id="bruit-io-fieldset">
-              {this.modalFields()}
-            </fieldset>
-          </form>
-        </div>
-        <div class="bruit-button-container" part="bruit-button-container">
-        {this.modalSubmitButtonOrError()}
-        </div>
+      <div
+        class="bruit-content"
+        part="bruit-content"
+        style={{ 'background-color': this._bruitIoConfig.colors.body }}
+      >
+        {this.modalSubHeader()}
+        <form id="bruit-io-form" part="bruit-io-form">
+          <fieldset id="bruit-io-fieldset" part="bruit-io-fieldset">
+            {this.modalFields()}
+          </fieldset>
+          <div class="bruit-button-container" part="bruit-button-container">
+            {this.modalSubmitButtonOrError()}
+          </div>
+        </form>
       </div>
     );
   }
