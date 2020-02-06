@@ -1,5 +1,9 @@
 @import './../../styles/devices';
 
+#root {
+  --font-family-brut: 'Montserrat', 'Roboto', Arial, Helvetica, sans-serif !important;
+}
+
 :host {
   display: block;
 
@@ -12,11 +16,7 @@
   @import './../../styles/submit-button';
   @import './../../styles/icon';
 
-  font-family: 'Montserrat',
-  Arial,
-  Helvetica,
-  sans-serif !important;
-
+  font-family: var(--font-family-brut);
 
   .bruit-error {
     color: #c31313 !important;

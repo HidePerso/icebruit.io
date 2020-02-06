@@ -2,7 +2,7 @@ $green: #1ECD97;
 $gray: #bbbbbb;
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family-brut);
 }
 
 .bruit-button-container {
