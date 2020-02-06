@@ -1,7 +1,7 @@
 /* form starting stylings ------------------------------- */
 .bruit-group {
   position: relative;
-  margin: 0 auto 45px auto;
+  margin: var(--bruit-group-margin);
   width: 100%;
   min-height: 20px;
   max-width: 400px;

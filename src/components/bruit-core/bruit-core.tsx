@@ -658,7 +658,7 @@ export class BruitCore {
           required={!!field.required}
           type={field.type}
         />
-        <label htmlFor={field.id} />
+        <label htmlFor={field.id} part="bruit-group-checkbox-label"/>
         <a
           class="bruit-checkbox-label"
           onClick={() => {
