@@ -518,7 +518,7 @@ export class BruitCore {
   }
 
   modalSubmitButtonOrError() {
-    if (!this.modalError) {
+    if (this.modalError) {
       return (
         <button
           type="submit"
