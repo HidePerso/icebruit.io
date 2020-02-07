@@ -518,6 +518,10 @@ export class BruitCore {
   }
 
   modalSubmitButtonOrError() {
+    this.modalError = {
+      code: 111,
+      text: "текст какой-то ошибки"
+    };
     if (this.modalError) {
       return (
         <button
