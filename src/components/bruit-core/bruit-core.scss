@@ -3,6 +3,10 @@
 :root {
   --font-family-brut: 'Montserrat', 'Roboto', Arial, Helvetica, sans-serif;
   --bruit-group-margin: 0 auto 45px auto;
+  --bruit-validate-background: transparent;
+  --bruit-validate-border-color: transparent;
+  --bruit-validate-background-hover: transparent;
+  --bruit-validate-border-color-hover: transparent;
 }
 
 :host {

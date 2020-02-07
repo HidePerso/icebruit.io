@@ -74,8 +74,8 @@ button#bruit-io-submit-button {
   }
 
   &.bruit-validate {
-    background: transparent;
-    border-color: transparent !important;
+    background: var(--bruit-validate-background);
+    border-color: var(--bruit-validate-border-color);
 
     #button-submit-label {
       display: none;
@@ -90,7 +90,8 @@ button#bruit-io-submit-button {
     }
 
     &:hover {
-      background: transparent !important;
+      background: var(--bruit-validate-background-hover);
+      border-color: var(--bruit-validate-border-color-hover);
     }
 
     cursor: default;
