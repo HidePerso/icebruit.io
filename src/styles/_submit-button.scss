@@ -76,6 +76,7 @@ button#bruit-io-submit-button {
   &.bruit-validate {
     background: var(--bruit-validate-background);
     border-color: var(--bruit-validate-border-color);
+    width: var(--bruit-validate-width);
 
     #button-submit-label {
       display: none;
